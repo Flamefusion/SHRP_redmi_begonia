@@ -7,7 +7,7 @@ jobs:
       GIT_EMAIL: meshekharbehera613@gmail.com
       GIT_NAME: Flamefusion
       VERSION: 2.2
-      PBRP_MANIFEST: 9.0
+      SHRP_MANIFEST: 9.0
       VENDOR: redmi
       DEVICE: begonia
    steps:
@@ -31,7 +31,7 @@ jobs:
            source build/envsetup.sh
            lunch omni_${DEVICE}-eng
            make recoveryimage
-           export BUILDFILE=$(find $(pwd)/out/target/product/${DEVICE}/PitchBlack*.zip 2>/dev/null)
+           export BUILDFILE=$(find $(pwd)/out/target/product/${DEVICE}/SKYHAWK*.zip 2>/dev/null)
            export BUILDFILE_IMG=$(find $(pwd)/out/target/product/${DEVICE}/recovery.img 2>/dev/null)
            export UPLOAD_PATH=$(pwd)/out/target/product/${DEVICE}/upload/
            mkdir ${UPLOAD_PATH}
