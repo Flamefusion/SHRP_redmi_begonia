@@ -126,5 +126,22 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_SKIP_COMPATIBILITY_CHECK := true
 TW_SCREEN_BLANK_ON_BOOT := true
 
+#SHRP_Variables
+SHRP_PATH := device/redmi/begonia
+SHRP_MAINTAINER := Flamefusion
+SHRP_DEVICE_CODE := begonia
+SHRP_EDL_MODE := 0
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usbotg
+SHRP_REC := /dev/block/bootdevice/by-name/recovery 
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := AB
+SHRP_FLASH := 0
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
+# SHRP Express, enables on-the-fly theme patching (also persistent) + persistent lock
+SHRP_EXPRESS := true
+
 PLATFORM_SECURITY_PATCH := 2019-10-05
 VENDOR_SECURITY_PATCH := 2019-06-05
