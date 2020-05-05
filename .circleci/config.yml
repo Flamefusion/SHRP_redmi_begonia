@@ -31,7 +31,7 @@ jobs:
            source build/envsetup.sh
            lunch omni_${DEVICE}-eng
            make recoveryimage
-           export BUILDFILE=$(find $(pwd)/out/target/product/${DEVICE}/SKYHAWK*.zip 2>/dev/null)
+           export BUILDFILE=$(find $(pwd)/out/target/product/${DEVICE}/SHRP*.zip 2>/dev/null)
            export BUILDFILE_IMG=$(find $(pwd)/out/target/product/${DEVICE}/recovery.img 2>/dev/null)
            export UPLOAD_PATH=$(pwd)/out/target/product/${DEVICE}/upload/
            mkdir ${UPLOAD_PATH}
